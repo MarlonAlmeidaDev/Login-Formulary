@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;700&display=swap');
+
+* {
+    padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+    }
+    
+
+    html {
+        height: 100%;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Verdana;
+        background-image: url(./img/background.jpeg);
+        background-position: center;
+        /* overlay */
+        background-color: rgba(0, 0, 0, 0.5);
+        background-blend-mode: color;
+    }
+
+    .caixa__login {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 25rem;
+        padding: 2.5rem;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 0.5);
+        box-sizing: border-box;
+        box-shadow: 0, 0.9375rem, 1.5625rem rgba(139, 128, 249, 0.6);
+        border-radius: 0.625rem;
+    }
+
+    .caixa__login h2 {
+        margin: 0 0 1.875rem;
+        padding: 0;
+        color: #8b80f9;
+        text-align: center;
+    }
+
+    .caixa__login .caixa__login-input input {
+        position: relative;
+        width: 100%;
+        padding: 0.625rem 0;
+        font-size: 1rem;
+        color: #8b80f9;
+        margin-bottom: 1.875rem;
+        border: 0;
+        border-bottom: 1px solid #fff;
+        outline: none;
+        background: transparent;
+    }
+
+    .caixa__login .caixa__login-input label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0.625rem 0;
+        font-size: 1rem;
+        color: #fff;
+        pointer-events: none;
+        transition: 0.5s;
+      }
+      
+      .caixa__login .caixa__login-input input:focus ~ label,
+      .caixa__login .caixa__login-input input:valid ~ label {
+        top: -20px;
+        left: 0;
+        color: #8b80f9;
+        font-size: 0.75rem;
+      }
+      
+      .caixa__login button {
+        text-align: center;
+        padding: 0.625rem 1.25rem;
+        color: #8b80f9;
+        font-size: 1rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.5s;
+        letter-spacing: 0.25rem;
+        background: transparent;
+        cursor: pointer;
+
+      }
+      
+      .caixa__login button:hover {
+        background: #8b80f9;
+        color: #fff;
+        border-radius: 0.3125rem;
+        box-shadow: 0 0 3px #8b80f9, 0 0 5px #8b80f9, 0 0 10px #8b80f9,
+          0 0 50px #8b80f9;
+      }
